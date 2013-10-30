@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249FED20182088D9006E666C /* DetailsActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED1F182088D9006E666C /* DetailsActivities.m */; };
+		249FED2318208908006E666C /* EditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2218208908006E666C /* EditDetails.m */; };
+		249FED2618208962006E666C /* ActivitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2518208962006E666C /* ActivitiesTab.m */; };
+		249FED29182089DB006E666C /* SchedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED28182089DB006E666C /* SchedActivity.m */; };
 		3C6861791819E297002A5DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6861781819E297002A5DE7 /* Foundation.framework */; };
 		3C68617B1819E297002A5DE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617A1819E297002A5DE7 /* CoreGraphics.framework */; };
 		3C68617D1819E297002A5DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617C1819E297002A5DE7 /* UIKit.framework */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249FED1E182088D9006E666C /* DetailsActivities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsActivities.h; sourceTree = "<group>"; };
+		249FED1F182088D9006E666C /* DetailsActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsActivities.m; sourceTree = "<group>"; };
+		249FED2118208908006E666C /* EditDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDetails.h; sourceTree = "<group>"; };
+		249FED2218208908006E666C /* EditDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDetails.m; sourceTree = "<group>"; };
+		249FED2418208962006E666C /* ActivitiesTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesTab.h; sourceTree = "<group>"; };
+		249FED2518208962006E666C /* ActivitiesTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesTab.m; sourceTree = "<group>"; };
+		249FED27182089DB006E666C /* SchedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedActivity.h; sourceTree = "<group>"; };
+		249FED28182089DB006E666C /* SchedActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedActivity.m; sourceTree = "<group>"; };
 		3C6861751819E297002A5DE7 /* Tic Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6861781819E297002A5DE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C68617A1819E297002A5DE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +135,14 @@
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
 				3C6861881819E298002A5DE7 /* AppDelegate.m */,
 				3C68618A1819E298002A5DE7 /* Main_iPhone.storyboard */,
+				249FED27182089DB006E666C /* SchedActivity.h */,
+				249FED28182089DB006E666C /* SchedActivity.m */,
+				249FED2418208962006E666C /* ActivitiesTab.h */,
+				249FED2518208962006E666C /* ActivitiesTab.m */,
+				249FED2118208908006E666C /* EditDetails.h */,
+				249FED2218208908006E666C /* EditDetails.m */,
+				249FED1E182088D9006E666C /* DetailsActivities.h */,
+				249FED1F182088D9006E666C /* DetailsActivities.m */,
 				3C6861B31819F0C2002A5DE7 /* Activity.h */,
 				3C6861B41819F0C3002A5DE7 /* Activity.m */,
 				3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */,
@@ -263,11 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249FED2318208908006E666C /* EditDetails.m in Sources */,
+				249FED29182089DB006E666C /* SchedActivity.m in Sources */,
 				3C6861921819E298002A5DE7 /* ViewController.m in Sources */,
 				3C6861891819E298002A5DE7 /* AppDelegate.m in Sources */,
 				3C6861851819E298002A5DE7 /* main.m in Sources */,
 				3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */,
 				3C6861B51819F0C3002A5DE7 /* Activity.m in Sources */,
+				249FED2618208962006E666C /* ActivitiesTab.m in Sources */,
+				249FED20182088D9006E666C /* DetailsActivities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +510,7 @@
 				3C6861AC1819E298002A5DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C6861AD1819E298002A5DE7 /* Build configuration list for PBXNativeTarget "Tic TalkTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +519,7 @@
 				3C6861AF1819E298002A5DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="10" y="57"/>
         </scene>
-        <!--Table View Controller - Activities-->
+        <!--Activities Tab - ActivitiesTab-->
         <scene sceneID="ufq-oT-4F0">
             <objects>
-                <tableViewController title="Activities" id="ohN-3s-Rh1" sceneMemberID="viewController">
+                <tableViewController title="ActivitiesTab" id="ohN-3s-Rh1" customClass="ActivitiesTab" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vJ3-6k-9tO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="1061" y="-354"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Activities - DetailsActivities-->
         <scene sceneID="9Xf-4U-GOc">
             <objects>
-                <viewController id="SmC-vh-xI7" sceneMemberID="viewController">
+                <viewController title="DetailsActivities" id="SmC-vh-xI7" customClass="DetailsActivities" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uvy-LY-Acc"/>
                         <viewControllerLayoutGuide type="bottom" id="alH-dT-gKL"/>
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="1480" y="-356"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Details - EditDetails-->
         <scene sceneID="Tuz-bP-WD5">
             <objects>
-                <viewController id="EVm-ZJ-r78" sceneMemberID="viewController">
+                <viewController title="EditDetails" id="EVm-ZJ-r78" customClass="EditDetails" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bUa-1V-8Kx"/>
                         <viewControllerLayoutGuide type="bottom" id="oWG-XE-qw9"/>
@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="1849" y="-354"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - SchedActivity-->
         <scene sceneID="9fL-FT-iz6">
             <objects>
-                <tableViewController id="Ldy-QU-S8m" sceneMemberID="viewController">
+                <tableViewController title="SchedActivity" id="Ldy-QU-S8m" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HPe-qC-Yvm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
