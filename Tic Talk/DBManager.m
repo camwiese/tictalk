@@ -105,7 +105,7 @@
     return result;
 }
 
-- (NSMutableArray *) queryAllActivities:(NSString *) query {
+- (NSMutableArray *) queryAllActivities {
     const char *dbpath = [self.dbPath UTF8String];
     sqlite3_stmt *statement;
     
@@ -134,6 +134,7 @@
         }
         sqlite3_close(_tiktalkDB);
     }
+    NSLog(@"ITEMS %lu", (unsigned long)result.count);
     return result;
 }
 
