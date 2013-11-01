@@ -11,8 +11,8 @@
 @interface Activity : NSObject
 @property NSString *name;
 @property int targetHours;
-@property UIColor *color;
+@property int color;
 
-- (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(UIColor *)color;
+- (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(int)color;
 
 @end
