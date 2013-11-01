@@ -29,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Activity * activity = [[Activity alloc] initWithName:@"Activity" targetHours:10 color:[UIColor blueColor]];
+    Activity * activity = [[Activity alloc] initWithName:@"Activity" targetHours:10 color:1];
     [self.activities addObject:activity];
 
     // Uncomment the following line to preserve selection between presentations.
