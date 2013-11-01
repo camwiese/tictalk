@@ -17,6 +17,6 @@
 
 -(void) initDB;
 -(void) insertObject:(Activity *) activity;
--(Activity *) queryActivities:(NSString *) query;
+-(Activity *) queryActivitiesByName:(NSString *) query;
 
 @end
