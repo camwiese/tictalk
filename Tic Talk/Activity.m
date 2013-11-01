@@ -10,7 +10,7 @@
 
 @implementation Activity
 
-- (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(UIColor *)color
+- (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(int)color
 {
     self = [super init];
     if(self) {
