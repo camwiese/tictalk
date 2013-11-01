@@ -128,7 +128,7 @@
                 NSLog(@"Target: %@", targetHours);
                 NSString *color = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 3)];
                 NSLog(@"Color: %@", color);
-                [result addObject:[[Activity alloc] initWithName:name targetHours:[targetHours intValue] color:[color intValue]]);
+                [result addObject:[[Activity alloc] initWithName:name targetHours:[targetHours intValue] color:[color intValue]])];
             } else {
                 result = Nil;
             }
