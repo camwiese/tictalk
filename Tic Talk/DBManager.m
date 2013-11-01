@@ -120,7 +120,7 @@
         
         if (sqlite3_prepare_v2(_tiktalkDB,  query_stmt, -1, &statement, NULL) == SQLITE_OK)
         {
-            if (sqlite3_step(statement) == SQLITE_ROW)
+            while (sqlite3_step(statement) == SQLITE_ROW)
             {
                 NSString *name = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
                 NSLog(@"Name: %@", name);
@@ -129,8 +129,6 @@
                 NSString *color = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 3)];
                 NSLog(@"Color: %@", color);
                 [result addObject:[[Activity alloc] initWithName:name targetHours:[targetHours intValue] color:[color intValue]]];
-            } else {
-                result = Nil;
             }
             sqlite3_finalize(statement);
         }
