@@ -105,4 +105,38 @@
     return result;
 }
 
+- (NSMutableArray *) queryAllActivities:(NSString *) query {
+    const char *dbpath = [self.dbPath UTF8String];
+    sqlite3_stmt *statement;
+    
+    NSMutableArray *result;
+    
+    if (sqlite3_open(dbpath, &_tiktalkDB) == SQLITE_OK)
+    {
+        NSString *querySQL = [NSString stringWithFormat:@"SELECT * FROM ACTIVITIES"];
+        NSLog(@"%@", querySQL);
+        
+        const char *query_stmt = [querySQL UTF8String];
+        
+        if (sqlite3_prepare_v2(_tiktalkDB,  query_stmt, -1, &statement, NULL) == SQLITE_OK)
+        {
+            if (sqlite3_step(statement) == SQLITE_ROW)
+            {
+                NSString *name = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                NSLog(@"Name: %@", name);
+                NSString *targetHours = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                NSLog(@"Target: %@", targetHours);
+                NSString *color = [[NSString alloc]initWithUTF8String:(const char *) sqlite3_column_text(statement, 3)];
+                NSLog(@"Color: %@", color);
+                [result addObject:[[Activity alloc] initWithName:name targetHours:[targetHours intValue] color:[color intValue]]);
+            } else {
+                result = Nil;
+            }
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(_tiktalkDB);
+    }
+    return result;
+}
+
 @end
