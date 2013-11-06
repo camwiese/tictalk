@@ -31,7 +31,6 @@
     [super viewDidLoad];
     
     self.db = [[DBManager alloc] init];
-    self.activities = [self.db queryAllActivities];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -63,9 +62,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Activity *temp =[self.activities objectAtIndex:indexPath.row];
-    NSLog(@"ROW TEXT: %@", temp.getName);
-    
-    cell.textLabel.text = temp.getName;
     
     return cell;
 }

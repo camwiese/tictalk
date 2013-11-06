@@ -1,19 +1,20 @@
 //
-//  Activity.m
+//  Event.m
 //  Tic Talk
 //
 //  Created by Wyatt Smith on 11/5/13.
 //  Copyright (c) 2013 Wyatt Smith. All rights reserved.
 //
 
-#import "Activity.h"
+#import "Event.h"
 
 
-@implementation Activity
+@implementation Event
 
 @dynamic name;
-@dynamic target;
-@dynamic color;
-@dynamic event;
+@dynamic startTime;
+@dynamic startDate;
+@dynamic endDate;
+@dynamic endTime;
 
 @end

@@ -8,10 +8,12 @@
 
 #import "SummaryViewController.h"
 #import "Activity.h"
+#import "DBManager.h"
 
 @interface SummaryViewController ()
 
 @property NSMutableArray *activities;
+@property DBManager *db;
 
 @end
 
@@ -29,8 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Activity * activity = [[Activity alloc] initWithName:@"Activity" targetHours:10 color:1];
-    [self.activities addObject:activity];
+    self.db = [[DBManager alloc] init];
+    Activity * activity = [[Activity alloc] init];
+    activity.name = @"TEST";
+    activity.target = [NSNumber numberWithInt:20];
+    activity.color = [NSNumber numberWithInt:2];
+    [self.db addActivity:[[Activity alloc] init]];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

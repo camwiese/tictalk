@@ -2,17 +2,19 @@
 //  Activity.h
 //  Tic Talk
 //
-//  Created by Wyatt Smith on 10/24/13.
+//  Created by Wyatt Smith on 11/5/13.
 //  Copyright (c) 2013 Wyatt Smith. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Activity : NSObject
-@property NSString *name;
-@property int targetHours;
-@property int color;
 
-- (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(int)color;
-- (NSString *) getName;
+@interface Activity : NSManagedObject
+
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * target;
+@property (nonatomic, retain) NSNumber * color;
+@property (nonatomic, retain) NSManagedObject *event;
+
 @end

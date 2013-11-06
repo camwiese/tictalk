@@ -27,8 +27,11 @@
 		3C6861A51819E298002A5DE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C6861A31819E298002A5DE7 /* InfoPlist.strings */; };
 		3C6861A71819E298002A5DE7 /* Tic_TalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6861A61819E298002A5DE7 /* Tic_TalkTests.m */; };
 		3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */; };
-		3C6861B51819F0C3002A5DE7 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6861B41819F0C3002A5DE7 /* Activity.m */; };
 		3CB4141F182329ED00975435 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4141E182329ED00975435 /* libsqlite3.dylib */; };
+		3CCB38871829BE6700F8A708 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCB38861829BE6700F8A708 /* CoreData.framework */; };
+		3CCB388A1829BEE700F8A708 /* ActivitiesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */; };
+		3CCB388D1829C1BD00F8A708 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB388C1829C1BD00F8A708 /* Activity.m */; };
+		3CCB38901829C1BE00F8A708 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB388F1829C1BE00F8A708 /* Event.m */; };
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 /* End PBXBuildFile section */
 
@@ -73,9 +76,13 @@
 		3C6861A61819E298002A5DE7 /* Tic_TalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tic_TalkTests.m; sourceTree = "<group>"; };
 		3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
-		3C6861B31819F0C2002A5DE7 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
-		3C6861B41819F0C3002A5DE7 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 		3CB4141E182329ED00975435 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CCB38861829BE6700F8A708 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3CCB38891829BEE700F8A708 /* ActivitiesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitiesModel.xcdatamodel; sourceTree = "<group>"; };
+		3CCB388B1829C1BD00F8A708 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		3CCB388C1829C1BD00F8A708 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		3CCB388E1829C1BE00F8A708 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		3CCB388F1829C1BE00F8A708 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		3CD2C8701823264F0008DF3A /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		3CD2C8711823264F0008DF3A /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCB38871829BE6700F8A708 /* CoreData.framework in Frameworks */,
 				3CB4141F182329ED00975435 /* libsqlite3.dylib in Frameworks */,
 				3C68617B1819E297002A5DE7 /* CoreGraphics.framework in Frameworks */,
 				3C68617D1819E297002A5DE7 /* UIKit.framework in Frameworks */,
@@ -127,6 +135,7 @@
 		3C6861771819E297002A5DE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CCB38861829BE6700F8A708 /* CoreData.framework */,
 				3CB4141E182329ED00975435 /* libsqlite3.dylib */,
 				3C6861781819E297002A5DE7 /* Foundation.framework */,
 				3C68617A1819E297002A5DE7 /* CoreGraphics.framework */,
@@ -141,6 +150,11 @@
 			children = (
 				3CD2C8701823264F0008DF3A /* DBManager.h */,
 				3CD2C8711823264F0008DF3A /* DBManager.m */,
+				3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */,
+				3CCB388E1829C1BE00F8A708 /* Event.h */,
+				3CCB388F1829C1BE00F8A708 /* Event.m */,
+				3CCB388B1829C1BD00F8A708 /* Activity.h */,
+				3CCB388C1829C1BD00F8A708 /* Activity.m */,
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
 				3C6861881819E298002A5DE7 /* AppDelegate.m */,
 				3C68618A1819E298002A5DE7 /* Main_iPhone.storyboard */,
@@ -152,8 +166,6 @@
 				249FED2218208908006E666C /* EditDetails.m */,
 				249FED1E182088D9006E666C /* DetailsActivities.h */,
 				249FED1F182088D9006E666C /* DetailsActivities.m */,
-				3C6861B31819F0C2002A5DE7 /* Activity.h */,
-				3C6861B41819F0C3002A5DE7 /* Activity.m */,
 				3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */,
 				3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */,
 				3C68618D1819E298002A5DE7 /* Main_iPad.storyboard */,
@@ -292,13 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCB38901829C1BE00F8A708 /* Event.m in Sources */,
 				249FED2318208908006E666C /* EditDetails.m in Sources */,
 				249FED29182089DB006E666C /* SchedActivity.m in Sources */,
 				3C6861921819E298002A5DE7 /* ViewController.m in Sources */,
 				3C6861891819E298002A5DE7 /* AppDelegate.m in Sources */,
+				3CCB388D1829C1BD00F8A708 /* Activity.m in Sources */,
 				3C6861851819E298002A5DE7 /* main.m in Sources */,
+				3CCB388A1829BEE700F8A708 /* ActivitiesModel.xcdatamodeld in Sources */,
 				3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */,
-				3C6861B51819F0C3002A5DE7 /* Activity.m in Sources */,
 				249FED2618208962006E666C /* ActivitiesTab.m in Sources */,
 				249FED20182088D9006E666C /* DetailsActivities.m in Sources */,
 				3CD2C8721823264F0008DF3A /* DBManager.m in Sources */,
@@ -532,6 +546,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3CCB38891829BEE700F8A708 /* ActivitiesModel.xcdatamodel */,
+			);
+			currentVersion = 3CCB38891829BEE700F8A708 /* ActivitiesModel.xcdatamodel */;
+			path = ActivitiesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3C68616D1819E297002A5DE7 /* Project object */;
 }
