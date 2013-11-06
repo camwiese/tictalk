@@ -14,5 +14,5 @@
 @property int color;
 
 - (Activity *)initWithName:(NSString *)name targetHours:(int)targetHours color:(int)color;
-
+- (NSString *) getName;
 @end

@@ -7,8 +7,12 @@
 //
 
 #import "ActivitiesTab.h"
+#import "DBManager.h"
 
 @interface ActivitiesTab ()
+
+@property NSMutableArray *activities;
+@property DBManager *db;
 
 @end
 
@@ -18,7 +22,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -26,7 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    self.db = [[DBManager alloc] init];
+    self.activities = [self.db queryAllActivities];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,16 +49,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.activities.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,7 +62,10 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    Activity *temp =[self.activities objectAtIndex:indexPath.row];
+    NSLog(@"ROW TEXT: %@", temp.getName);
+    
+    cell.textLabel.text = temp.getName;
     
     return cell;
 }
