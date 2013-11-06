@@ -17,5 +17,6 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator ;
 
 -(void) addActivity:(Activity*) activity;
+-(NSArray*) getAllActivities;
 
 @end
