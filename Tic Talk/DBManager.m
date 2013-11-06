@@ -8,6 +8,7 @@
 
 #import "DBManager.h"
 #import "Activity.h"
+#import "Event.h"
 #import <sqlite3.h>
 #import <CoreData/CoreData.h>
 
@@ -31,7 +32,6 @@
     return managedObjectContext;
 }
 
-//2
 - (NSManagedObjectModel *)managedObjectModel {
     if (managedObjectModel != nil) {
         return managedObjectModel;
@@ -41,7 +41,6 @@
     return managedObjectModel;
 }
 
-//3
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     if (persistentStoreCoordinator != nil) {
         return persistentStoreCoordinator;
@@ -50,9 +49,8 @@
                                                stringByAppendingPathComponent: @"PhoneBook.sqlite"]];
     NSError *error = nil;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
-                                   initWithManagedObjectModel:[self managedObjectModel]];
-    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
-                                                  configuration:nil URL:storeUrl options:nil error:&error]) {
+                                  initWithManagedObjectModel:[self managedObjectModel]];
+    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
         /*Error for store creation should be handled in here*/
     }
     
@@ -65,7 +63,21 @@
 
 
 
-- (void)addActivity:(Activity*) activity
+- (void)addActivity:(NSString*)name :(NSNumber*)target :(NSNumber*) color
+{
+    Activity * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:self.managedObjectContext];
+    newEntry.name = name;
+    newEntry.target = target;
+    newEntry.color = color;
+    NSError *error;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    } else {
+        NSLog(@"SUCCESS!!!!");
+    }
+}
+
+- (void)addEvent:(Event*) event
 {
     NSError *error;
     if (![self.managedObjectContext save:&error]) {
@@ -79,6 +91,16 @@
 {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Activity" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError* error;
+    NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    return fetchedRecords;
+}
+
+-(NSArray*)getAllEvents
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Events" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     NSError* error;
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];

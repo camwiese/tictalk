@@ -16,7 +16,8 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator ;
 
--(void) addActivity:(Activity*) activity;
+-(void) addActivity:(NSString*)name : (NSNumber*)target :(NSNumber*)color;
 -(NSArray*) getAllActivities;
+-(NSArray*) getAllEvents;
 
 @end
