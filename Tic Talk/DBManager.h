@@ -12,12 +12,12 @@
 
 @interface DBManager : NSObject
 
-@property (nonatomic) NSString *dbPath;
-@property (nonatomic) sqlite3 *tiktalkDB;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator ;
 
--(void) initDB;
--(void) insertObject:(Activity *) activity;
--(Activity *) queryActivitiesByName:(NSString *) query;
--(NSMutableArray *) queryAllActivities;
+-(void) addActivity:(NSString*)name : (NSNumber*)target :(NSNumber*)color;
+-(NSArray*) getAllActivities;
+-(NSArray*) getAllEvents;
 
 @end

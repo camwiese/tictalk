@@ -11,8 +11,9 @@
 
 @interface ActivitiesTab ()
 
-@property NSMutableArray *activities;
+@property NSArray *activities;
 @property DBManager *db;
+
 
 @end
 
@@ -31,7 +32,10 @@
     [super viewDidLoad];
     
     self.db = [[DBManager alloc] init];
-    self.activities = [self.db queryAllActivities];
+    
+    self.activities = [self.db getAllActivities];
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -63,9 +67,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Activity *temp =[self.activities objectAtIndex:indexPath.row];
-    NSLog(@"ROW TEXT: %@", temp.getName);
     
-    cell.textLabel.text = temp.getName;
+    cell.textLabel.text = temp.name;
     
     return cell;
 }
