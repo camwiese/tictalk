@@ -37,6 +37,41 @@
     return self;
 }
 
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    if (indexPath.item == 1) {
+        [cell setBackgroundColor:[UIColor blackColor]];
+    } else if (indexPath.item == 2) {
+        [cell setBackgroundColor:[UIColor greenColor]];
+    } else if (indexPath.item == 3) {
+        [cell setBackgroundColor:[UIColor redColor]];
+    } else if (indexPath.item == 4) {
+        [cell setBackgroundColor:[UIColor orangeColor]];
+    } else if (indexPath.item == 5) {
+        [cell setBackgroundColor:[UIColor lightGrayColor]];
+    } else if (indexPath.item == 6) {
+        [cell setBackgroundColor:[UIColor blueColor]];
+    } else if (indexPath.item == 7) {
+        [cell setBackgroundColor:[UIColor brownColor]];
+    } else if (indexPath.item == 8) {
+        [cell setBackgroundColor:[UIColor purpleColor]];
+    } else if (indexPath.item == 9) {
+        [cell setBackgroundColor:[UIColor yellowColor]];
+    }
+    return cell;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"clicked item %d", indexPath.item);
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [_activityName resignFirstResponder];
     return NO;
