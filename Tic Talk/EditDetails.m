@@ -7,12 +7,11 @@
 //
 
 #import "EditDetails.h"
-#import "DBManager.m"
+#import "DBManager.h"
 
 @interface EditDetails ()
 @property (weak, nonatomic) IBOutlet UITextField *targetNum;
 @property (weak, nonatomic) IBOutlet UITextField *activityName;
-- (IBAction)save:(id)sender;
 
 @end
 
@@ -64,7 +63,6 @@
    
     DBManager *db = [[DBManager alloc]init];
     [db addActivity: self.activityName.text : [NSNumber numberWithInt:[self.targetNum.text integerValue]] :0];
-     
    
 }
 @end
