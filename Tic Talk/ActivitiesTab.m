@@ -34,6 +34,7 @@
     self.db = [[DBManager alloc] init];
     
     self.activities = [self.db getAllActivities];
+    NSLog(@"%i", self.activities.count);
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -53,7 +54,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
