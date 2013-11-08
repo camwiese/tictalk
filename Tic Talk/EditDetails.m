@@ -9,10 +9,24 @@
 #import "EditDetails.h"
 
 @interface EditDetails ()
+@property (weak, nonatomic) IBOutlet UITextField *targetNum;
+@property (weak, nonatomic) IBOutlet UITextField *activityName;
 
 @end
 
 @implementation EditDetails
+- (IBAction)nameEntry:(UITextField*)sender {
+    self.title = sender.text;
+}
+- (IBAction)targetNumber:(UITextField*)sender {
+    NSString *targetNumber = [NSString stringWithFormat:@"", sender.text];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_targetNum resignFirstResponder];
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,9 +37,15 @@
     return self;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [_activityName resignFirstResponder];
+    return NO;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.activityName.delegate = self;
 	// Do any additional setup after loading the view.
 }
 
