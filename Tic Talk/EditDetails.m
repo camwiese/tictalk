@@ -7,6 +7,7 @@
 //
 
 #import "EditDetails.h"
+#import "DBManager.h"
 
 @interface EditDetails ()
 @property (weak, nonatomic) IBOutlet UITextField *targetNum;
@@ -15,6 +16,8 @@
 @end
 
 @implementation EditDetails
+
+
 - (IBAction)nameEntry:(UITextField*)sender {
     self.title = sender.text;
 }
@@ -26,6 +29,7 @@
 {
     [_targetNum resignFirstResponder];
 }
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -90,4 +94,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)save:(id)sender {
+   
+    DBManager *db = [[DBManager alloc]init];
+    [db addActivity: self.activityName.text : [NSNumber numberWithInt:[self.targetNum.text integerValue]] :0];
+   
+}
 @end

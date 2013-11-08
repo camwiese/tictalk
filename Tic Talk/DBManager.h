@@ -17,6 +17,7 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator ;
 
 -(void) addActivity:(NSString*)name : (NSNumber*)target :(NSNumber*)color;
+-(void) addEvent:(NSNumber*)startTime :(NSNumber*)endTime;
 -(NSArray*) getAllActivities;
 -(NSArray*) getAllEvents;
 
