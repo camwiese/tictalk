@@ -11,6 +11,7 @@
 		249FED2318208908006E666C /* EditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2218208908006E666C /* EditDetails.m */; };
 		249FED2618208962006E666C /* ActivitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2518208962006E666C /* ActivitiesTab.m */; };
 		249FED29182089DB006E666C /* SchedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED28182089DB006E666C /* SchedActivity.m */; };
+		3C374AF8182C6AFF00463BB1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C374AF7182C6AFF00463BB1 /* Event.m */; };
 		3C6861791819E297002A5DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6861781819E297002A5DE7 /* Foundation.framework */; };
 		3C68617B1819E297002A5DE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617A1819E297002A5DE7 /* CoreGraphics.framework */; };
 		3C68617D1819E297002A5DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617C1819E297002A5DE7 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 		249FED2518208962006E666C /* ActivitiesTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesTab.m; sourceTree = "<group>"; };
 		249FED27182089DB006E666C /* SchedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedActivity.h; sourceTree = "<group>"; };
 		249FED28182089DB006E666C /* SchedActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedActivity.m; sourceTree = "<group>"; };
+		3C374AF6182C6AFF00463BB1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		3C374AF7182C6AFF00463BB1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		3C6861751819E297002A5DE7 /* Tic Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6861781819E297002A5DE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C68617A1819E297002A5DE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				3CD2C8701823264F0008DF3A /* DBManager.h */,
 				3CD2C8711823264F0008DF3A /* DBManager.m */,
 				3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */,
+				3C374AF6182C6AFF00463BB1 /* Event.h */,
+				3C374AF7182C6AFF00463BB1 /* Event.m */,
 				3CCB388B1829C1BD00F8A708 /* Activity.h */,
 				3CCB388C1829C1BD00F8A708 /* Activity.m */,
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C374AF8182C6AFF00463BB1 /* Event.m in Sources */,
 				249FED2318208908006E666C /* EditDetails.m in Sources */,
 				249FED29182089DB006E666C /* SchedActivity.m in Sources */,
 				3C6861921819E298002A5DE7 /* ViewController.m in Sources */,
