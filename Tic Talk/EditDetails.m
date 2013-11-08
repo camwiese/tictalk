@@ -11,10 +11,13 @@
 @interface EditDetails ()
 @property (weak, nonatomic) IBOutlet UITextField *targetNum;
 @property (weak, nonatomic) IBOutlet UITextField *activityName;
+- (IBAction)save:(id)sender;
 
 @end
 
 @implementation EditDetails
+
+
 - (IBAction)nameEntry:(UITextField*)sender {
     self.title = sender.text;
 }
@@ -26,6 +29,7 @@
 {
     [_targetNum resignFirstResponder];
 }
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -55,4 +59,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)save:(id)sender {
+    
+   NSLog(@"SUCCESS!!!!");
+}
 @end
