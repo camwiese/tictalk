@@ -31,7 +31,6 @@
 		3CCB38871829BE6700F8A708 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCB38861829BE6700F8A708 /* CoreData.framework */; };
 		3CCB388A1829BEE700F8A708 /* ActivitiesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */; };
 		3CCB388D1829C1BD00F8A708 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB388C1829C1BD00F8A708 /* Activity.m */; };
-		3CCB38901829C1BE00F8A708 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB388F1829C1BE00F8A708 /* Event.m */; };
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 /* End PBXBuildFile section */
 
@@ -81,8 +80,6 @@
 		3CCB38891829BEE700F8A708 /* ActivitiesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitiesModel.xcdatamodel; sourceTree = "<group>"; };
 		3CCB388B1829C1BD00F8A708 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
 		3CCB388C1829C1BD00F8A708 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
-		3CCB388E1829C1BE00F8A708 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		3CCB388F1829C1BE00F8A708 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		3CD2C8701823264F0008DF3A /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		3CD2C8711823264F0008DF3A /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,8 +148,6 @@
 				3CD2C8701823264F0008DF3A /* DBManager.h */,
 				3CD2C8711823264F0008DF3A /* DBManager.m */,
 				3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */,
-				3CCB388E1829C1BE00F8A708 /* Event.h */,
-				3CCB388F1829C1BE00F8A708 /* Event.m */,
 				3CCB388B1829C1BD00F8A708 /* Activity.h */,
 				3CCB388C1829C1BD00F8A708 /* Activity.m */,
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
@@ -304,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CCB38901829C1BE00F8A708 /* Event.m in Sources */,
 				249FED2318208908006E666C /* EditDetails.m in Sources */,
 				249FED29182089DB006E666C /* SchedActivity.m in Sources */,
 				3C6861921819E298002A5DE7 /* ViewController.m in Sources */,

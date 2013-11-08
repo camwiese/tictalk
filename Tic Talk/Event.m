@@ -8,6 +8,7 @@
 
 #import "Event.h"
 #import "DBManager.h"
+#import <CoreData/CoreData.h>
 
 
 @implementation Event
