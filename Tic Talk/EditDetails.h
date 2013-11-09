@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditDetails : UIViewController <UITextFieldDelegate>
+@interface EditDetails : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 
 @end
