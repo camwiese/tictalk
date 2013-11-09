@@ -15,13 +15,8 @@
 @property DBManager *db;
 
 
-
 @end
 
-@implementation DeviceDetailViewController
-@synthesize device;
-
-@end
 @implementation ActivitiesTab
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -132,14 +127,6 @@
 
  */
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"EditActivity"]) {
-        NSManagedObject *selectedDevice = [self.activities objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
-        DeviceDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.activities = selectedDevice;
-    }
-}
 
 
 @end
