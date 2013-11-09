@@ -15,8 +15,13 @@
 @property DBManager *db;
 
 
+
 @end
 
+@implementation DeviceDetailViewController
+@synthesize device;
+
+@end
 @implementation ActivitiesTab
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -35,7 +40,8 @@
     
     self.activities = [self.db getAllActivities];
     NSLog(@"%i", self.activities.count);
-    
+    NSLog(@"Cameron's Testing this");
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -67,9 +73,10 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    Activity *temp =[self.activities objectAtIndex:indexPath.row];
+    NSManagedObject *activities = [self.activities objectAtIndex:indexPath.row];
+    [cell.textLabel setText:[NSString stringWithFormat:@"%@", [activities valueForKey:@"name"]]];
     
-    cell.textLabel.text = temp.name;
+//    cell.textLabel.text = [self.activities objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -124,5 +131,15 @@
 }
 
  */
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"EditActivity"]) {
+        NSManagedObject *selectedDevice = [self.activities objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        DeviceDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.activities = selectedDevice;
+    }
+}
+
 
 @end

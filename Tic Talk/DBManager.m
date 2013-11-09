@@ -73,7 +73,7 @@
     if (![self.managedObjectContext save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
     } else {
-        NSLog(@"SUCCESS!!!!");
+        NSLog(@"SUCCESS!!!! - Activity Saved");
     }
 }
 
@@ -86,7 +86,7 @@
     if (![self.managedObjectContext save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
     } else {
-        NSLog(@"SUCCESS!!!!");
+        NSLog(@"SUCCESS!!!! - Event Saved");
     }
 }
 
