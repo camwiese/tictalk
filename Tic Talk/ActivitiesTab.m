@@ -35,7 +35,7 @@
     
     self.activities = [self.db getAllActivities];
     NSLog(@"%i", self.activities.count);
-    NSLog(@"Cameron's Testing this");
+    NSLog(@"Cameron is Testing this");
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -75,6 +75,8 @@
     
     return cell;
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.
