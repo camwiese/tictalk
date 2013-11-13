@@ -19,6 +19,7 @@
 
 @implementation ActivitiesTab
 
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -43,6 +44,14 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+}
+
+//This function allows you to swipe left to reveal a delete funciton
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
 }
 
 - (void)didReceiveMemoryWarning
