@@ -1,19 +1,18 @@
 //
-//  DetailsActivities.m
+//  startTimer.m
 //  Tic Talk
 //
-//  Created by Matthew Davis on 10/29/13.
+//  Created by Alex Graziano on 11/12/13.
 //  Copyright (c) 2013 Wyatt Smith. All rights reserved.
 //
 
-#import "DetailsActivities.h"
+#import "startTimer.h"
 
-@interface DetailsActivities ()
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+@interface startTimer ()
 
 @end
 
-@implementation DetailsActivities
+@implementation startTimer
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
-    _progressBar.transform = transform;
 	// Do any additional setup after loading the view.
 }
 
