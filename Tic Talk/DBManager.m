@@ -110,4 +110,24 @@
     return fetchedRecords;
 }
 
+-(void) removeActivity:(Activity*) activity {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    [context deleteObject:activity];
+    NSError * error;
+    if (![context save:&error]) {
+        NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
+        return;
+    }
+}
+
+-(void) removeEvent:(Event*) event {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    [context deleteObject:event];
+    NSError * error;
+    if (![context save:&error]) {
+        NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
+        return;
+    }
+}
+
 @end

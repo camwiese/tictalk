@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 #import "Activity.h"
+#import "Event.h"
 
 @interface DBManager : NSObject
 
@@ -20,5 +21,7 @@
 -(void) addEvent:(NSNumber*)startTime :(NSNumber*)endTime;
 -(NSArray*) getAllActivities;
 -(NSArray*) getAllEvents;
+-(void) removeActivity:(Activity*) activity;
+-(void) removeEvent:(Event*) event;
 
 @end
