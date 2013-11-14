@@ -130,4 +130,13 @@
     }
 }
 
+-(void) saveData {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSError * error;
+    if (![context save:&error]) {
+        NSLog(@"ERROR UPDATING! %@ %@", error, [error localizedDescription]);
+        return;
+    }
+}
+
 @end
