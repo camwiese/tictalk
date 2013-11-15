@@ -21,7 +21,7 @@
 -(void) addEvent:(NSNumber*)startTime :(NSNumber*)endTime;
 -(NSArray*) getAllActivities;
 -(NSArray*) getAllEvents;
--(void) removeActivity:(Activity*) activity;
--(void) removeEvent:(Event*) event;
+-(void) removeActivity:(NSInteger) index;
+-(void) removeEvent:(NSNumber*) index;
 
 @end
