@@ -1,19 +1,20 @@
 //
-//  DetailsActivities.m
+//  AddNewBlock.m
 //  Tic Talk
 //
-//  Created by Matthew Davis on 10/29/13.
+//  Created by Alex Graziano on 11/12/13.
 //  Copyright (c) 2013 Wyatt Smith. All rights reserved.
 //
 
-#import "DetailsActivities.h"
+#import "AddNewBlock.h"
 
-@interface DetailsActivities ()
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+@interface AddNewBlock ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *startDate;
+@property (weak, nonatomic) IBOutlet UIDatePicker *endDate;
 
 @end
 
-@implementation DetailsActivities
+@implementation AddNewBlock
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
-    _progressBar.transform = transform;
+    _startDate.transform = CGAffineTransformMakeScale(.7, 0.7);
+    _endDate.transform = CGAffineTransformMakeScale(.7, 0.7);
 	// Do any additional setup after loading the view.
 }
 
