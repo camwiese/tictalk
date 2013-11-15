@@ -110,30 +110,27 @@
     return fetchedRecords;
 }
 
--(void) removeActivity:(Activity*) activity {
-    NSManagedObjectContext *context = [self managedObjectContext];
-    [context deleteObject:activity];
+-(void) removeActivity:(NSInteger) index {
+    NSArray *temp = [self getAllActivities];
+    [self.managedObjectContext deleteObject:[temp objectAtIndex:index]];
     NSError * error;
-    if (![context save:&error]) {
+    if (![self.managedObjectContext save:&error]) {
         NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
         return;
     }
 }
 
 -(void) removeEvent:(Event*) event {
-    NSManagedObjectContext *context = [self managedObjectContext];
-    [context deleteObject:event];
     NSError * error;
-    if (![context save:&error]) {
+    if (![self.managedObjectContext save:&error]) {
         NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
         return;
     }
 }
 
 -(void) saveData {
-    NSManagedObjectContext *context = [self managedObjectContext];
     NSError * error;
-    if (![context save:&error]) {
+    if (![self.managedObjectContext save:&error]) {
         NSLog(@"ERROR UPDATING! %@ %@", error, [error localizedDescription]);
         return;
     }
