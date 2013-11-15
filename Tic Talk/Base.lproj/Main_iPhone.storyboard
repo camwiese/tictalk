@@ -348,6 +348,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UHF-QT-L6l"/>
+                    <connections>
+                        <outlet property="timeDisplay" destination="HqP-hQ-gCc" id="PQ9-jb-MCM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIW-if-faF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

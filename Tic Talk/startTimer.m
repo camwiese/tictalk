@@ -9,6 +9,7 @@
 #import "startTimer.h"
 
 @interface startTimer ()
+@property (weak, nonatomic) IBOutlet UILabel *timeDisplay;
 
 @end
 
@@ -19,13 +20,16 @@
 - (IBAction)start:(UIButton*)sender {
     _timerRunning = false;
 }
+/*
 
 - (void) timer {
     while (_timerRunning == true)
     {
-        
+        NSString *timeDisplay = [NSString stringWithFormat:@"" + _hours + " : " + _minutes + " : " + _seconds], sender.text;
     }
 }
+
+ */
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
