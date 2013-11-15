@@ -53,8 +53,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showDetailActivity"]){
-        UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
-        DetailsActivities *controller = (DetailsActivities*)navController.topViewController;
+        DetailsActivities *controller = segue.destinationViewController;
         controller.isSomethingEnabled = [self.activities objectAtIndex:[self.tableView indexPathForSelectedRow] .row];
     }
     
@@ -93,7 +92,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"ActivityTitle";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSManagedObject *activities = [self.activities objectAtIndex:indexPath.row];
