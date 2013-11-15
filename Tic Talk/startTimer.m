@@ -13,6 +13,19 @@
 @end
 
 @implementation startTimer
+- (IBAction)stop:(UIButton*)sender {
+    _timerRunning = true;
+}
+- (IBAction)start:(UIButton*)sender {
+    _timerRunning = false;
+}
+
+- (void) timer {
+    while (_timerRunning == true)
+    {
+        
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

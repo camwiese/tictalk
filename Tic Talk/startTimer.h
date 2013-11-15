@@ -10,4 +10,11 @@
 
 @interface startTimer : UIViewController
 
+@property bool timerRunning;
+@property int hours;
+@property int minutes;
+@property int seconds;
+//@property NSString
+
+
 @end
