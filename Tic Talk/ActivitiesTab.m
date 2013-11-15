@@ -51,7 +51,12 @@
 //This function allows you to swipe left to reveal a delete funciton
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    // Remove the row from data model
+    DBManager *db = [[DBManager alloc]init];
+    [db removeActivity:indexPath.row];
+    self.activities = [db getAllActivities];
+    // Request table view to reload
+    [tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
