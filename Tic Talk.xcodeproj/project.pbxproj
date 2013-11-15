@@ -35,6 +35,7 @@
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 		82B47A561833058300C70DC0 /* startTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A551833058300C70DC0 /* startTimer.m */; };
 		82B47A59183306A700C70DC0 /* AddNewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A58183306A700C70DC0 /* AddNewBlock.m */; };
+		82BA9AF21835A6300092AF88 /* Main_iPhone-old.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82BA9AF11835A6300092AF88 /* Main_iPhone-old.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		82B47A551833058300C70DC0 /* startTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startTimer.m; sourceTree = "<group>"; };
 		82B47A57183306A700C70DC0 /* AddNewBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewBlock.h; sourceTree = "<group>"; };
 		82B47A58183306A700C70DC0 /* AddNewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewBlock.m; sourceTree = "<group>"; };
+		82BA9AF11835A6300092AF88 /* Main_iPhone-old.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main_iPhone-old.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
 				3C6861881819E298002A5DE7 /* AppDelegate.m */,
 				3C68618A1819E298002A5DE7 /* Main_iPhone.storyboard */,
+				82BA9AF11835A6300092AF88 /* Main_iPhone-old.storyboard */,
 				82B47A57183306A700C70DC0 /* AddNewBlock.h */,
 				82B47A58183306A700C70DC0 /* AddNewBlock.m */,
 				82B47A541833058300C70DC0 /* startTimer.h */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C68618F1819E298002A5DE7 /* Main_iPad.storyboard in Resources */,
+				82BA9AF21835A6300092AF88 /* Main_iPhone-old.storyboard in Resources */,
 				3C6861941819E298002A5DE7 /* Images.xcassets in Resources */,
 				3C68618C1819E298002A5DE7 /* Main_iPhone.storyboard in Resources */,
 				3C6861831819E297002A5DE7 /* InfoPlist.strings in Resources */,
