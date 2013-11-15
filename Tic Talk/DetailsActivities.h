@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Activity.h"
 
 @interface DetailsActivities : UIViewController
+@property (nonatomic) Activity *isSomethingEnabled;
 
 @end

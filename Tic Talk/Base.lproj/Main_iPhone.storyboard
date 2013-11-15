@@ -40,7 +40,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="SmC-vh-xI7" kind="modal" id="VD8-j7-MXM"/>
+                                    <segue destination="SmC-vh-xI7" kind="custom" identifier="showDetailActivity" id="3uM-Qr-WYF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -378,6 +378,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="JBi-y1-dXu"/>
-        <segue reference="Vdi-S5-Rrn"/>
+        <segue reference="KsD-3K-zSw"/>
     </inferredMetricsTieBreakers>
 </document>

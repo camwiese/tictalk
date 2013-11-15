@@ -8,6 +8,7 @@
 
 #import "ActivitiesTab.h"
 #import "DBManager.h"
+#import "DetailsActivities.h"
 
 @interface ActivitiesTab ()
 
@@ -15,9 +16,11 @@
 @property DBManager *db;
 
 
+
 @end
 
 @implementation ActivitiesTab
+
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -47,6 +50,18 @@
     
     
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showDetailActivity"]){
+        UINavigationController *navController = (UINavigationController *)segue.destinationViewController;
+        DetailsActivities *controller = (DetailsActivities*)navController.topViewController;
+        controller.isSomethingEnabled = [self.activities objectAtIndex:[self.tableView indexPathForSelectedRow] .row];
+    }
+    
+    NSLog (@"it worked");
+}
+
 
 //This function allows you to swipe left to reveal a delete funciton
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
