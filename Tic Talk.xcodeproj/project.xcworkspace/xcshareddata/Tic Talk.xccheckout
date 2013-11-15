@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6B9C6FA-1025-46C7-9847-327CE4158346</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tic Talk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>37041BB6-4E81-4E97-BC2D-B322AE693193</key>
+		<string>https://github.com/camwiese/tictalk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tic Talk.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>37041BB6-4E81-4E97-BC2D-B322AE693193</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/camwiese/tictalk</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>37041BB6-4E81-4E97-BC2D-B322AE693193</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>37041BB6-4E81-4E97-BC2D-B322AE693193</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tictalk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
