@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24598206183C46210055F79D /* newspaper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24598205183C46210055F79D /* newspaper1.png */; };
 		249FED20182088D9006E666C /* DetailsActivities.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED1F182088D9006E666C /* DetailsActivities.m */; };
 		249FED2318208908006E666C /* EditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2218208908006E666C /* EditDetails.m */; };
 		249FED2618208962006E666C /* ActivitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2518208962006E666C /* ActivitiesTab.m */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24598205183C46210055F79D /* newspaper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper1.png; sourceTree = "<group>"; };
 		249FED1E182088D9006E666C /* DetailsActivities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsActivities.h; sourceTree = "<group>"; };
 		249FED1F182088D9006E666C /* DetailsActivities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsActivities.m; sourceTree = "<group>"; };
 		249FED2118208908006E666C /* EditDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDetails.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				3C6861901819E298002A5DE7 /* ViewController.h */,
 				3C6861911819E298002A5DE7 /* ViewController.m */,
 				3C6861931819E298002A5DE7 /* Images.xcassets */,
+				24598205183C46210055F79D /* newspaper1.png */,
 				3C68617F1819E297002A5DE7 /* Supporting Files */,
 			);
 			path = "Tic Talk";
@@ -296,6 +299,7 @@
 				3C6861941819E298002A5DE7 /* Images.xcassets in Resources */,
 				3C68618C1819E298002A5DE7 /* Main_iPhone.storyboard in Resources */,
 				3C6861831819E297002A5DE7 /* InfoPlist.strings in Resources */,
+				24598206183C46210055F79D /* newspaper1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

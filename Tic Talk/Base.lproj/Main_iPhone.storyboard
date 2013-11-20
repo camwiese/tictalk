@@ -498,7 +498,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="79Z-yZ-48n">
             <objects>
                 <navigationController definesPresentationContext="YES" id="6p2-sb-faE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" id="ybN-5T-2jY"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="newspaper1.png" id="ybN-5T-2jY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3T-e4-BOy">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -527,6 +527,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="795" y="-368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="newspaper1.png" width="32" height="32"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
