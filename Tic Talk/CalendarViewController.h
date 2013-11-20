@@ -1,5 +1,5 @@
 //
-//  CalendarVC.h
+//  CalendarViewController.h
 //  Tic Talk
 //
 //  Created by wysmith on 11/19/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalendarVC : UINavigationController
+@interface CalendarViewController : UITableViewController
 
 @end
