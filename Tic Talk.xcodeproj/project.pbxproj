@@ -28,6 +28,7 @@
 		3C6861A51819E298002A5DE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C6861A31819E298002A5DE7 /* InfoPlist.strings */; };
 		3C6861A71819E298002A5DE7 /* Tic_TalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6861A61819E298002A5DE7 /* Tic_TalkTests.m */; };
 		3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */; };
+		3C8FF467183C44F20075C1D6 /* CalendarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8FF466183C44F20075C1D6 /* CalendarVC.m */; };
 		3CB4141F182329ED00975435 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4141E182329ED00975435 /* libsqlite3.dylib */; };
 		3CCB38871829BE6700F8A708 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCB38861829BE6700F8A708 /* CoreData.framework */; };
 		3CCB388A1829BEE700F8A708 /* ActivitiesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CCB38881829BEE700F8A708 /* ActivitiesModel.xcdatamodeld */; };
@@ -81,6 +82,8 @@
 		3C6861A61819E298002A5DE7 /* Tic_TalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tic_TalkTests.m; sourceTree = "<group>"; };
 		3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		3C8FF465183C44F20075C1D6 /* CalendarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarVC.h; sourceTree = "<group>"; };
+		3C8FF466183C44F20075C1D6 /* CalendarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarVC.m; sourceTree = "<group>"; };
 		3CB4141E182329ED00975435 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		3CCB38861829BE6700F8A708 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3CCB38891829BEE700F8A708 /* ActivitiesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ActivitiesModel.xcdatamodel; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
 				3C6861881819E298002A5DE7 /* AppDelegate.m */,
 				3C68618A1819E298002A5DE7 /* Main_iPhone.storyboard */,
+				3C8FF465183C44F20075C1D6 /* CalendarVC.h */,
+				3C8FF466183C44F20075C1D6 /* CalendarVC.m */,
 				82BA9AF11835A6300092AF88 /* Main_iPhone-old.storyboard */,
 				82B47A57183306A700C70DC0 /* AddNewBlock.h */,
 				82B47A58183306A700C70DC0 /* AddNewBlock.m */,
@@ -330,6 +335,7 @@
 				82B47A561833058300C70DC0 /* startTimer.m in Sources */,
 				3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */,
 				249FED2618208962006E666C /* ActivitiesTab.m in Sources */,
+				3C8FF467183C44F20075C1D6 /* CalendarVC.m in Sources */,
 				249FED20182088D9006E666C /* DetailsActivities.m in Sources */,
 				3CD2C8721823264F0008DF3A /* DBManager.m in Sources */,
 			);
