@@ -23,5 +23,6 @@
 -(NSArray*) getAllEvents;
 -(void) removeActivity:(NSInteger) index;
 -(void) removeEvent:(NSNumber*) index;
+-(void) saveData;
 
 @end

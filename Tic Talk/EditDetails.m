@@ -98,6 +98,7 @@
    
     DBManager *db = [[DBManager alloc]init];
     [db addActivity: self.activityName.text : [NSNumber numberWithInt:[self.targetNum.text integerValue]] :0];
-   
+    [db saveData];
+    [[self navigationController] popViewControllerAnimated:YES];
 }
 @end

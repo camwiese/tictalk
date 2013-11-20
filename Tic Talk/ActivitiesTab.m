@@ -50,6 +50,14 @@
     
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    NSLog(@"Reloaded");
+    self.db = [[DBManager alloc] init];
+    
+    self.activities = [self.db getAllActivities];
+    [self.tableView reloadData];
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"showDetailActivity"]){
