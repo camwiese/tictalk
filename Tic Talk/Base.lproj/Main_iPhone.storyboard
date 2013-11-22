@@ -213,7 +213,7 @@
                                 <rect key="frame" x="35" y="80" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Start" backgroundImage="BeFunky_Free Vector Glossy Buttons1.png">
+                                <state key="normal" title="Start" backgroundImage="buttonstart.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -222,7 +222,7 @@
                                 <rect key="frame" x="35" y="200" width="250" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Stop" backgroundImage="BeFunky_Free Vector Glossy Buttons2.png">
+                                <state key="normal" title="Stop" backgroundImage="buttonstop.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -540,8 +540,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="BeFunky_Free Vector Glossy Buttons1.png" width="251" height="87"/>
-        <image name="BeFunky_Free Vector Glossy Buttons2.png" width="251" height="87"/>
+        <image name="buttonstart.png" width="251" height="87"/>
+        <image name="buttonstop.png" width="251" height="87"/>
         <image name="newspaper1.png" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
