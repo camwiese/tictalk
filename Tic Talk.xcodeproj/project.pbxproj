@@ -12,6 +12,7 @@
 		249FED2318208908006E666C /* EditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2218208908006E666C /* EditDetails.m */; };
 		249FED2618208962006E666C /* ActivitiesTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED2518208962006E666C /* ActivitiesTab.m */; };
 		249FED29182089DB006E666C /* SchedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED28182089DB006E666C /* SchedActivity.m */; };
+		24BA4C95183EEB830099BEB1 /* runner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BA4C94183EEB830099BEB1 /* runner1.png */; };
 		3C374AF8182C6AFF00463BB1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C374AF7182C6AFF00463BB1 /* Event.m */; };
 		3C6861791819E297002A5DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6861781819E297002A5DE7 /* Foundation.framework */; };
 		3C68617B1819E297002A5DE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617A1819E297002A5DE7 /* CoreGraphics.framework */; };
@@ -60,6 +61,7 @@
 		249FED2518208962006E666C /* ActivitiesTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesTab.m; sourceTree = "<group>"; };
 		249FED27182089DB006E666C /* SchedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedActivity.h; sourceTree = "<group>"; };
 		249FED28182089DB006E666C /* SchedActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedActivity.m; sourceTree = "<group>"; };
+		24BA4C94183EEB830099BEB1 /* runner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner1.png; sourceTree = "<group>"; };
 		3C374AF6182C6AFF00463BB1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		3C374AF7182C6AFF00463BB1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		3C6861751819E297002A5DE7 /* Tic Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				3C6861911819E298002A5DE7 /* ViewController.m */,
 				3C6861931819E298002A5DE7 /* Images.xcassets */,
 				24598205183C46210055F79D /* newspaper1.png */,
+				24BA4C94183EEB830099BEB1 /* runner1.png */,
 				3C68617F1819E297002A5DE7 /* Supporting Files */,
 			);
 			path = "Tic Talk";
@@ -304,6 +307,7 @@
 				3C68618F1819E298002A5DE7 /* Main_iPad.storyboard in Resources */,
 				3C6861941819E298002A5DE7 /* Images.xcassets in Resources */,
 				3C68618C1819E298002A5DE7 /* Main_iPhone.storyboard in Resources */,
+				24BA4C95183EEB830099BEB1 /* runner1.png in Resources */,
 				FBEFDF86183EE70700F6C579 /* buttonstop.png in Resources */,
 				3C6861831819E297002A5DE7 /* InfoPlist.strings in Resources */,
 				FBEFDF87183EE70700F6C579 /* buttonstart.png in Resources */,

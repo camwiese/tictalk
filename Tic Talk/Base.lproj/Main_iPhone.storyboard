@@ -520,7 +520,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="LXA-8L-vYP">
             <objects>
                 <navigationController definesPresentationContext="YES" id="D2a-Am-hDT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activities" id="c7c-D9-e66"/>
+                    <tabBarItem key="tabBarItem" title="Activities" image="runner1.png" id="c7c-D9-e66"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gdC-cg-Y88">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
@@ -543,6 +543,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="buttonstart.png" width="251" height="87"/>
         <image name="buttonstop.png" width="251" height="87"/>
         <image name="newspaper1.png" width="32" height="32"/>
+        <image name="runner1.png" width="35" height="35"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
