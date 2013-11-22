@@ -17,6 +17,7 @@
 @property NSDate *startDate;
 @property NSDate *endDate;
 @property NSDate *diffDate;
+@property NSTimer *timerz;
 
 //@property NSString
 
