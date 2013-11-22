@@ -21,35 +21,35 @@
 }
 - (IBAction)start:(UIButton*)sender {
     _timerRunning = true;
-    [self timer];}
+    if (self.startDate == nil){
+        self.startDate = [[NSDate alloc] init];
+    }
+    [self timer];
+}
 
 
 
 - (void) timer {
     if (_timerRunning == true)
     {
-        
         [NSTimer scheduledTimerWithTimeInterval:1.0
                                          target:self
                                        selector:@selector(targetMethod:)
                                        userInfo:nil
                                         repeats:YES];
-        
-        
-        
-        /* "%@/ : /%@/ : /%@", hourString, minuteString, secondString];
-         */
-        
     }
 }
 
 - (void) targetMethod: (NSTimer*)sender{
-    NSString *hourString = @"blah";
+//    self.endDate = [[NSDate alloc] initWithTimeInterval:theTimeInterval sinceDate:_startDate];
+
+    
+    NSString *hourString = [NSString stringWithFormat:@"%d", _hours];
+    NSString *spacer = @" : ";
     NSString *minuteString = [NSString stringWithFormat:@"%d", _minutes];
     NSString *secondString = [NSString stringWithFormat:@"%d", _seconds];
-    NSString *combined = [NSString stringWithFormat:@"%@%@%@", hourString, minuteString, secondString];
+    NSString *combined = [NSString stringWithFormat:@"%@%@%@%@%@", hourString, spacer, minuteString, spacer, secondString];
     _timerDisplay.text = combined;
-    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
