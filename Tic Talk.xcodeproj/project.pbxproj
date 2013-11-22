@@ -36,8 +36,6 @@
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 		82B47A561833058300C70DC0 /* startTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A551833058300C70DC0 /* startTimer.m */; };
 		82B47A59183306A700C70DC0 /* AddNewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A58183306A700C70DC0 /* AddNewBlock.m */; };
-		FBEFDF6D183EE0D500F6C579 /* BeFunky_Free Vector Glossy Buttons1.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF6C183EE0D500F6C579 /* BeFunky_Free Vector Glossy Buttons1.png */; };
-		FBEFDF6F183EE0E000F6C579 /* BeFunky_Free Vector Glossy Buttons2.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF6E183EE0E000F6C579 /* BeFunky_Free Vector Glossy Buttons2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +93,6 @@
 		82B47A551833058300C70DC0 /* startTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startTimer.m; sourceTree = "<group>"; };
 		82B47A57183306A700C70DC0 /* AddNewBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewBlock.h; sourceTree = "<group>"; };
 		82B47A58183306A700C70DC0 /* AddNewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewBlock.m; sourceTree = "<group>"; };
-		FBEFDF6C183EE0D500F6C579 /* BeFunky_Free Vector Glossy Buttons1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeFunky_Free Vector Glossy Buttons1.png"; sourceTree = "<group>"; };
-		FBEFDF6E183EE0E000F6C579 /* BeFunky_Free Vector Glossy Buttons2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BeFunky_Free Vector Glossy Buttons2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +124,6 @@
 		3C68616C1819E297002A5DE7 = {
 			isa = PBXGroup;
 			children = (
-				FBEFDF65183EDD2D00F6C579 /* Free Vector Glossy Buttons */,
 				3C68617E1819E297002A5DE7 /* Tic Talk */,
 				3C6861A01819E298002A5DE7 /* Tic TalkTests */,
 				3C6861771819E297002A5DE7 /* Frameworks */,
@@ -224,16 +219,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FBEFDF65183EDD2D00F6C579 /* Free Vector Glossy Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				FBEFDF6E183EE0E000F6C579 /* BeFunky_Free Vector Glossy Buttons2.png */,
-				FBEFDF6C183EE0D500F6C579 /* BeFunky_Free Vector Glossy Buttons1.png */,
-			);
-			name = "Free Vector Glossy Buttons";
-			path = "../../../Desktop/free_vector_glossy_buttons_147983/Free Vector Glossy Buttons";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -311,8 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C68618F1819E298002A5DE7 /* Main_iPad.storyboard in Resources */,
-				FBEFDF6D183EE0D500F6C579 /* BeFunky_Free Vector Glossy Buttons1.png in Resources */,
-				FBEFDF6F183EE0E000F6C579 /* BeFunky_Free Vector Glossy Buttons2.png in Resources */,
 				3C6861941819E298002A5DE7 /* Images.xcassets in Resources */,
 				3C68618C1819E298002A5DE7 /* Main_iPhone.storyboard in Resources */,
 				3C6861831819E297002A5DE7 /* InfoPlist.strings in Resources */,
