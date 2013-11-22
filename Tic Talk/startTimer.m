@@ -9,27 +9,48 @@
 #import "startTimer.h"
 
 @interface startTimer ()
-@property (weak, nonatomic) IBOutlet UILabel *timeDisplay;
+@property (weak, nonatomic) IBOutlet UILabel *timerDisplay;
+
 
 @end
 
 @implementation startTimer
 - (IBAction)stop:(UIButton*)sender {
-    _timerRunning = true;
+    _timerRunning = false;
+    
 }
 - (IBAction)start:(UIButton*)sender {
-    _timerRunning = false;
-}
+    _timerRunning = true;
+    [self timer];}
 
-/*
+
+
 - (void) timer {
-    while (_timerRunning == true)
+    if (_timerRunning == true)
     {
-        NSString *timeDisplay = &"" [ _hours] + " : " + _minutes + " : " + _seconds];
+        
+        [NSTimer scheduledTimerWithTimeInterval:1.0
+                                         target:self
+                                       selector:@selector(targetMethod:)
+                                       userInfo:nil
+                                        repeats:YES];
+        
+        
+        
+        /* "%@/ : /%@/ : /%@", hourString, minuteString, secondString];
+         */
+        
     }
 }
-*/
 
+- (void) targetMethod: (NSTimer*)sender{
+    NSString *hourString = @"blah";
+    NSString *minuteString = [NSString stringWithFormat:@"%d", _minutes];
+    NSString *secondString = [NSString stringWithFormat:@"%d", _seconds];
+    NSString *combined = [NSString stringWithFormat:@"%@%@%@", hourString, minuteString, secondString];
+    _timerDisplay.text = combined;
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,7 +64,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    _hours = 10;
+    _minutes = 10;
+    _seconds = 10;
 }
 
 - (void)didReceiveMemoryWarning
