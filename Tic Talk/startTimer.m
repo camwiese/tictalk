@@ -17,7 +17,8 @@
 @implementation startTimer
 - (IBAction)stop:(UIButton*)sender {
     [self.timerz invalidate];
-    self.startDate = [[NSDate alloc] init];
+  //  self.startDate = self.endDate;
+    _timerRunning = FALSE;
     
 }
 - (IBAction)start:(UIButton*)sender {
@@ -25,6 +26,7 @@
         self.startDate = [[NSDate alloc] init];
     }
     [self timer];
+    _timerRunning = TRUE;
 }
 
 
@@ -40,7 +42,7 @@
 
 - (void) targetMethod: (NSTimer*)sender{
     self.endDate = [[NSDate alloc] init];
-    NSTimeInterval interval = [_endDate timeIntervalSinceDate:(_startDate)];
+    NSTimeInterval interval = [self.endDate timeIntervalSinceDate:(self.startDate)];
     if (interval > 0){
         NSInteger time = (NSInteger) interval;
         _hours = time / 3060;
