@@ -7,6 +7,7 @@
 //
 
 #import "CalendarViewController.h"
+#import "DBManager.h"
 
 @interface CalendarViewController ()
 
@@ -26,7 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    DBManager *db = [[DBManager alloc] init];
+    NSArray *dbEvents = [db getAllEvents];
+    
+    for(Event * e in dbEvents) {
+        NSLog(@"Date %@", e.startTime);
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
