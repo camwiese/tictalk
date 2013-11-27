@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Activity.h"
 
 @interface EditDetails : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic, strong) IBOutlet UIProgressView * threadProgressView;
+
+@property Activity *activity;
 
 @end
