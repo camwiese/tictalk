@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic, strong) IBOutlet UIProgressView * threadProgressView;
+
 @end

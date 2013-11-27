@@ -24,7 +24,6 @@
 - (IBAction)targetNumber:(UITextField*)sender {
     NSString *targetNumber = [NSString stringWithFormat:@"", sender.text];
 }
-
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [_targetNum resignFirstResponder];
@@ -40,6 +39,7 @@
     }
     return self;
 }
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
