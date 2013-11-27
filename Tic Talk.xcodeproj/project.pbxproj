@@ -87,7 +87,6 @@
 		3C6861A61819E298002A5DE7 /* Tic_TalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tic_TalkTests.m; sourceTree = "<group>"; };
 		3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		3C6861B11819EFE0002A5DE7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
-		3C8FF474183C47120075C1D6 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		3C8FF475183C47120075C1D6 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		3CB4141E182329ED00975435 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		3CCB38861829BE6700F8A708 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -177,8 +176,8 @@
 				3C6861871819E298002A5DE7 /* AppDelegate.h */,
 				3C6861881819E298002A5DE7 /* AppDelegate.m */,
 				3C68618A1819E298002A5DE7 /* Main_iPhone.storyboard */,
-				82B47A58183306A700C70DC0 /* AddNewBlock.m */,
 				82B47A57183306A700C70DC0 /* AddNewBlock.h */,
+				82B47A58183306A700C70DC0 /* AddNewBlock.m */,
 				82B47A541833058300C70DC0 /* startTimer.h */,
 				82B47A551833058300C70DC0 /* startTimer.m */,
 				249FED27182089DB006E666C /* SchedActivity.h */,
