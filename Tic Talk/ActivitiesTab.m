@@ -9,6 +9,7 @@
 #import "ActivitiesTab.h"
 #import "DBManager.h"
 #import "DetailsActivities.h"
+#import "EditDetails.h"
 
 @interface ActivitiesTab ()
 

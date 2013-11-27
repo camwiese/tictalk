@@ -173,6 +173,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="progressText" destination="6OI-xp-dAV" id="FKY-Lh-cQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYO-ay-CV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

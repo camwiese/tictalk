@@ -9,7 +9,6 @@
 #import "DetailsActivities.h"
 
 @interface DetailsActivities ()
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 
 @end
 
@@ -28,9 +27,15 @@
 {
     [super viewDidLoad];
     CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
-    _progressBar.transform = transform;
+    self.progressBar.transform = transform;
 	// Do any additional setup after loading the view.
+    float progress = 4/[self.isSomethingEnabled.target floatValue];
+    [self.progressBar setProgress:progress animated:YES];
+    NSLog(@"%f", progress);
+    NSLog(@"%@", self.isSomethingEnabled.target);
+    self.progressText.text = [NSString stringWithFormat:@"4/%@", self.isSomethingEnabled.target];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
