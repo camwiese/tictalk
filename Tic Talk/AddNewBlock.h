@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface AddNewBlock : UIViewController
+@property (weak, nonatomic) IBOutlet UIDatePicker *startDate;
+@property (weak, nonatomic) IBOutlet UIDatePicker *endDate;
+- (IBAction)newBlockPressed:(id)sender;
+
 
 @end
