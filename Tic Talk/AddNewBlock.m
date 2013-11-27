@@ -39,7 +39,5 @@
 
 - (IBAction)newBlockPressed:(id)sender {
     
-
-    
 }
 @end
