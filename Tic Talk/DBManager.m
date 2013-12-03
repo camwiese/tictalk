@@ -68,7 +68,6 @@
     Activity * newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Activity" inManagedObjectContext:self.managedObjectContext];
     newEntry.name = name;
     newEntry.target = target;
-    newEntry.color = color;
     NSError *error;
     if (![self.managedObjectContext save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
