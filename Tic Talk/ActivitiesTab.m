@@ -9,7 +9,7 @@
 #import "ActivitiesTab.h"
 #import "DBManager.h"
 #import "DetailsActivities.h"
-#import "EditDetails.h"
+
 
 @interface ActivitiesTab ()
 
@@ -69,6 +69,7 @@
     }
     
     NSLog (@"it worked");
+    
 }
 
 
@@ -109,11 +110,10 @@
     NSManagedObject *activities = [self.activities objectAtIndex:indexPath.row];
     [cell.textLabel setText:[NSString stringWithFormat:@"%@", [activities valueForKey:@"name"]]];
     
-//    cell.textLabel.text = [self.activities objectAtIndex:indexPath.row];
+    //    cell.textLabel.text = [self.activities objectAtIndex:indexPath.row];
     
     return cell;
 }
-
 
 
 /*

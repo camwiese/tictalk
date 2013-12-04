@@ -29,27 +29,49 @@
     return self;
 }
 
+- (void) convertBlockNSDateToHoursMinutes
+{
+    //endDate;
+    //startDate;
+    
+    
+    //NSCalendar *calendar = [NSCalendar currentCalendar];
+    //NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
+    //NSInteger hour = [components hour];
+    //NSInteger minute = [components minute];
+    
+    
+    
+    
+    NSDate *startDate;
+    NSDate *endDate;
+    NSTimeInterval interval = [endDate timeIntervalSinceDate:startDate];
+    int hours = (int)interval / 3600;
+    int minutes = (interval - (hours*3600)) / 60;
+    NSString *timediff = [NSString stringWithFormat:@"%d:d", hours, minutes];
+    //this code should take the date of the time interval into account, I'm not sure what to do with my timediff varible name - Matt
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DBManager *db = [[DBManager alloc]init];
+    self.activities = [db getAllActivities];
+    
     CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
     self.progressBar.transform = transform;
 	// Do any additional setup after loading the view.
-        float progress = 4/[self.isSomethingEnabled.target floatValue];
+    float progress = 4 / [self.isSomethingEnabled.target floatValue];
         [self.progressBar setProgress:progress animated:YES];
         NSLog(@"%f", progress);
         NSLog(@"%@", self.isSomethingEnabled.target);
         self.progressText.text = [NSString stringWithFormat:@"4/%@", self.isSomethingEnabled.target];
-    DBManager *db = [[DBManager alloc]init];
-    self.activities = [db getAllActivities];
+
     
     self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
     
-//    float progress = 4/[self.isSomethingEnabled.target floatValue];
-//    [self.progressBar setProgress:progress animated:YES];
-//    NSLog(@"%f", progress);
-//    NSLog(@"%@", self.isSomethingEnabled.target);
-//    self.progressText.text = [NSString stringWithFormat:@"4/%@", self.isSomethingEnabled.target];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
