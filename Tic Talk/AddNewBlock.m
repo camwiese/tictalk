@@ -9,9 +9,6 @@
 #import "AddNewBlock.h"
 
 @interface AddNewBlock ()
-@property (weak, nonatomic) IBOutlet UIDatePicker *startDate;
-@property (weak, nonatomic) IBOutlet UIDatePicker *endDate;
-
 
 @end
 
@@ -40,4 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)newBlockPressed:(id)sender {
+    
+}
 @end
