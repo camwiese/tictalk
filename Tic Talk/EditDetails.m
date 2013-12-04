@@ -107,4 +107,6 @@
     [db updateActivity:self.activityName.text:[NSNumber numberWithInt:[self.targetNum.text intValue]]:0:self.activityNumber];
     [db saveData];
     [[self navigationController] popViewControllerAnimated:YES];
-}@end
+}
+
+@end
