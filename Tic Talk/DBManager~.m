@@ -107,7 +107,7 @@
     }
 }
 
-- (void)addEvent:(NSNumber*) startTime : (NSNumber*) endTime
+- (void)addEvent:(NSDate*) startTime : (NSDate*) endTime
 {
     Event * event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
     event.startTime = startTime;
@@ -137,6 +137,7 @@
     [fetchRequest setEntity:entity];
     NSError* error;
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    NSLog(@"%@", error);
     return fetchedRecords;
 }
 
