@@ -29,6 +29,31 @@
     return self;
 }
 
+- (void) convertBlockNSDateToHoursMinutes
+{
+    //endDate;
+    //startDate;
+    
+    
+    //NSCalendar *calendar = [NSCalendar currentCalendar];
+    //NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
+    //NSInteger hour = [components hour];
+    //NSInteger minute = [components minute];
+    
+    
+    /*
+     NSDate *dateA;
+     NSDate *dateB;
+     
+     NSCalendar *calendar = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
+     NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+     fromDate:dateA
+     toDate:dateB
+     options:0];
+     */
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
