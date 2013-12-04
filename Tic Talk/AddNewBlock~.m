@@ -40,6 +40,6 @@
 - (IBAction)clickAddBlock:(id)sender {
     DBManager *db = [[DBManager alloc] init];
     [db addEvent:self.startDate.date :self.endDate.date];
-    //[self popViewControllerAnimated:YES];
+    [self popViewControllerAnimated:YES];
 }
 @end

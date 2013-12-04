@@ -13,8 +13,8 @@
 
 @interface Event : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * endTime;
-@property (nonatomic, retain) NSNumber * startTime;
+@property (nonatomic, retain) NSDate * endTime;
+@property (nonatomic, retain) NSDate * startTime;
 @property (nonatomic, retain) Activity *relationshipToActivity;
 
 @end
