@@ -26,8 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _startDate.transform = CGAffineTransformMakeScale(.7, 0.7);
-    _endDate.transform = CGAffineTransformMakeScale(.7, 0.7);
+    //_startDate.transform = CGAffineTransformMakeScale(.7, 0.7);
+    //_endDate.transform = CGAffineTransformMakeScale(.7, 0.7);
 	// Do any additional setup after loading the view.
 }
 
@@ -35,9 +35,5 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)newBlockPressed:(id)sender {
-    
 }
 @end
