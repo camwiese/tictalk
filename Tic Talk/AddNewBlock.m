@@ -7,6 +7,7 @@
 //
 
 #import "AddNewBlock.h"
+#import "DBManager.h"
 
 @interface AddNewBlock ()
 
@@ -35,5 +36,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)addBlock:(id)sender {
+    DBManager *db = [[DBManager alloc] init];
+    [db addEvent:self.startDate.date :self.endDate.date];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

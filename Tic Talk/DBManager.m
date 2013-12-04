@@ -107,7 +107,7 @@
     }
 }
 
-- (void)addEvent:(NSNumber*) startTime : (NSNumber*) endTime
+- (void)addEvent:(NSDate*) startTime : (NSDate*) endTime
 {
     Event * event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
     event.startTime = startTime;
