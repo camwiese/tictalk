@@ -52,6 +52,7 @@
     self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

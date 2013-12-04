@@ -160,7 +160,7 @@
                     <navigationItem key="navigationItem" title="&quot;NSString activity&quot;" id="5ft-jQ-IRJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="1j9-LR-DIx">
                             <connections>
-                                <segue destination="OOR-7J-0IV" kind="push" id="m1g-Ld-wkb"/>
+                                <segue destination="OOR-7J-0IV" kind="push" identifier="edit" id="m1g-Ld-wkb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
