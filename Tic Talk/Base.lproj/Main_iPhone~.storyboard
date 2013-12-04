@@ -256,7 +256,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addBlock:" destination="xs8-Ux-pu5" eventType="touchUpInside" id="UbZ-9e-gSY"/>
-                                    <action selector="newBlockPressed:" destination="xs8-Ux-pu5" eventType="touchUpInside" id="Wu2-76-CHw"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0e6-h0-YzR">
