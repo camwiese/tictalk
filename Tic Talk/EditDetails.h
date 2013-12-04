@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) IBOutlet UIProgressView * threadProgressView;
 
-@property Activity *activity;
+@property (nonatomic)Activity *isSomethingEnabled;
+@property (nonatomic)NSNumber *activityNumber;
+
 
 @end

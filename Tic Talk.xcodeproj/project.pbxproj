@@ -37,6 +37,7 @@
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 		82B47A561833058300C70DC0 /* startTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A551833058300C70DC0 /* startTimer.m */; };
 		82B47A59183306A700C70DC0 /* AddNewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A58183306A700C70DC0 /* AddNewBlock.m */; };
+		CB4EB039184EB8C300C7276E /* AddNewActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4EB038184EB8C300C7276E /* AddNewActivity.m */; };
 		FBEFDF86183EE70700F6C579 /* buttonstop.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF84183EE70700F6C579 /* buttonstop.png */; };
 		FBEFDF87183EE70700F6C579 /* buttonstart.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF85183EE70700F6C579 /* buttonstart.png */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,8 @@
 		82B47A551833058300C70DC0 /* startTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startTimer.m; sourceTree = "<group>"; };
 		82B47A57183306A700C70DC0 /* AddNewBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewBlock.h; sourceTree = "<group>"; };
 		82B47A58183306A700C70DC0 /* AddNewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewBlock.m; sourceTree = "<group>"; };
+		CB4EB037184EB8C300C7276E /* AddNewActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewActivity.h; sourceTree = "<group>"; };
+		CB4EB038184EB8C300C7276E /* AddNewActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewActivity.m; sourceTree = "<group>"; };
 		FBEFDF84183EE70700F6C579 /* buttonstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonstop.png; sourceTree = "<group>"; };
 		FBEFDF85183EE70700F6C579 /* buttonstart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonstart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +187,8 @@
 				249FED2518208962006E666C /* ActivitiesTab.m */,
 				249FED2118208908006E666C /* EditDetails.h */,
 				249FED2218208908006E666C /* EditDetails.m */,
+				CB4EB037184EB8C300C7276E /* AddNewActivity.h */,
+				CB4EB038184EB8C300C7276E /* AddNewActivity.m */,
 				249FED1E182088D9006E666C /* DetailsActivities.h */,
 				249FED1F182088D9006E666C /* DetailsActivities.m */,
 				3C6861B01819EFE0002A5DE7 /* SummaryViewController.h */,
@@ -330,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4EB039184EB8C300C7276E /* AddNewActivity.m in Sources */,
 				82B47A59183306A700C70DC0 /* AddNewBlock.m in Sources */,
 				3C374AF8182C6AFF00463BB1 /* Event.m in Sources */,
 				249FED2318208908006E666C /* EditDetails.m in Sources */,

@@ -61,9 +61,11 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    UITableViewCell *cell = (UITableViewCell *)sender;
     if([segue.identifier isEqualToString:@"showDetailActivity"]){
         DetailsActivities *controller = segue.destinationViewController;
         controller.isSomethingEnabled = [self.activities objectAtIndex:[self.tableView indexPathForSelectedRow] .row];
+        controller.activityNumber = [NSNumber numberWithInt:[self.tableView indexPathForCell:cell].row];
     }
     
     NSLog (@"it worked");

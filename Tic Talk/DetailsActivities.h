@@ -11,6 +11,7 @@
 
 @interface DetailsActivities : UIViewController
 @property (nonatomic) Activity *isSomethingEnabled;
+@property (nonatomic)NSNumber *activityNumber;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 @property (weak, nonatomic) IBOutlet UILabel *progressText;
 
