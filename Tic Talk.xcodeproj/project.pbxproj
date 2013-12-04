@@ -14,6 +14,7 @@
 		249FED29182089DB006E666C /* SchedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FED28182089DB006E666C /* SchedActivity.m */; };
 		24BA4C95183EEB830099BEB1 /* runner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BA4C94183EEB830099BEB1 /* runner1.png */; };
 		3C215486184EBE3E000FFECE /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C215485184EBE3E000FFECE /* Event.m */; };
+		3C21548C184EC218000FFECE /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C21548B184EC218000FFECE /* CalendarViewController.m */; };
 		3C6861791819E297002A5DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6861781819E297002A5DE7 /* Foundation.framework */; };
 		3C68617B1819E297002A5DE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617A1819E297002A5DE7 /* CoreGraphics.framework */; };
 		3C68617D1819E297002A5DE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68617C1819E297002A5DE7 /* UIKit.framework */; };
@@ -65,6 +66,8 @@
 		24BA4C94183EEB830099BEB1 /* runner1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner1.png; sourceTree = "<group>"; };
 		3C215484184EBE3E000FFECE /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		3C215485184EBE3E000FFECE /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		3C21548A184EC218000FFECE /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarViewController.h; path = ../CalendarViewController.h; sourceTree = "<group>"; };
+		3C21548B184EC218000FFECE /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarViewController.m; path = ../CalendarViewController.m; sourceTree = "<group>"; };
 		3C6861751819E297002A5DE7 /* Tic Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6861781819E297002A5DE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C68617A1819E297002A5DE7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +168,8 @@
 		3C68617E1819E297002A5DE7 /* Tic Talk */ = {
 			isa = PBXGroup;
 			children = (
+				3C21548A184EC218000FFECE /* CalendarViewController.h */,
+				3C21548B184EC218000FFECE /* CalendarViewController.m */,
 				FBEFDF84183EE70700F6C579 /* buttonstop.png */,
 				FBEFDF85183EE70700F6C579 /* buttonstart.png */,
 				3CD2C8701823264F0008DF3A /* DBManager.h */,
@@ -347,6 +352,7 @@
 				82B47A561833058300C70DC0 /* startTimer.m in Sources */,
 				3C6861B21819EFE0002A5DE7 /* SummaryViewController.m in Sources */,
 				249FED2618208962006E666C /* ActivitiesTab.m in Sources */,
+				3C21548C184EC218000FFECE /* CalendarViewController.m in Sources */,
 				3C215486184EBE3E000FFECE /* Event.m in Sources */,
 				249FED20182088D9006E666C /* DetailsActivities.m in Sources */,
 				3CD2C8721823264F0008DF3A /* DBManager.m in Sources */,
