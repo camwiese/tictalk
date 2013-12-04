@@ -76,6 +76,37 @@
     }
 }
 
+-(void)updateActivity:(NSString*)name :(NSNumber*)target :(NSNumber*)color :(NSNumber*)updatedActivityNumber
+{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:[NSEntityDescription entityForName:@"Activity" inManagedObjectContext:context]];
+    NSLog(@"SUCCESS!!!! - Request Succeeded");
+    NSError *errorFetch = nil;
+    NSArray *results = [context executeFetchRequest:request error:&errorFetch];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == %@", name];
+    NSLog(@"name == %@", name);
+    
+    [request setPredicate:predicate];
+    NSLog(@"results == %@", results);
+    
+    
+    
+    //Update the activity!
+    Activity* activityBeingUpdated = [results objectAtIndex:[updatedActivityNumber intValue]];
+    activityBeingUpdated.name = name;
+    activityBeingUpdated.target = target;
+    activityBeingUpdated.color = color;
+    
+    NSError *error;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    } else {
+        NSLog(@"SUCCESS!!!! - Activity Edited");
+    }
+}
+
 - (void)addEvent:(NSNumber*) startTime : (NSNumber*) endTime
 {
     Event * event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
