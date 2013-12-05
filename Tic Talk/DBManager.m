@@ -107,11 +107,12 @@
     }
 }
 
-- (void)addEvent:(NSDate*) startTime : (NSDate*) endTime
+- (void)addEvent:(NSDate*) startTime : (NSDate*) endTime :(Activity*) activity
 {
     Event * event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
     event.startTime = startTime;
     event.endTime = endTime;
+    event.relationshipToActivity = activity;
     NSError *error;
     if (![self.managedObjectContext save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);

@@ -2,7 +2,7 @@
 //  Activity.h
 //  Tic Talk
 //
-//  Created by Wyatt Smith on 11/5/13.
+//  Created by Wyatt Smith on 12/4/13.
 //  Copyright (c) 2013 Wyatt Smith. All rights reserved.
 //
 
@@ -14,7 +14,5 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * target;
-@property (nonatomic, retain) NSNumber * color;
-@property (nonatomic, retain) NSManagedObject *event;
 
 @end

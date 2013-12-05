@@ -97,7 +97,7 @@
     Activity* activityBeingUpdated = [results objectAtIndex:[updatedActivityNumber intValue]];
     activityBeingUpdated.name = name;
     activityBeingUpdated.target = target;
-    activityBeingUpdated.color = color;
+    //activityBeingUpdated.color = color;
     
     NSError *error;
     if (![self.managedObjectContext save:&error]) {

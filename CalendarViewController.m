@@ -33,7 +33,8 @@
     self.days = [[NSMutableArray alloc] init];
     NSDate *start = ((Event*) [self.events firstObject]).startTime;
     int count = 0;
-    NSMutableArray *temp;
+    NSMutableArray *temp = [[NSMutableArray alloc] init];
+    [self.days addObject:temp];
     for(Event *e in self.events) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
         dateFormatter.dateFormat = @"MM/dd/yy";
@@ -77,7 +78,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"s: %ld | r: %ld", (long)indexPath.section, (long)indexPath.row);
-    static NSString *CellIdentifier = @"Cell";
+    NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
