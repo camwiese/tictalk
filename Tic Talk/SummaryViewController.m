@@ -35,7 +35,6 @@
     Activity * activity = [[Activity alloc] init];
     activity.name = @"TEST";
     activity.target = [NSNumber numberWithInt:20];
-    activity.color = [NSNumber numberWithInt:2];
     //[self.db addActivity:[[Activity alloc] init]];
     self.activities = [self.db getAllActivities];
     // Uncomment the following line to preserve selection between presentations.
