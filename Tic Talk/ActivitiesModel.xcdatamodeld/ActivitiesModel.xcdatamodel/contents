@@ -10,7 +10,7 @@
         <relationship name="relationshipToActivity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Activity" positionX="-659" positionY="-252" width="128" height="73"/>
-        <element name="Event" positionX="-324" positionY="-0" width="128" height="88"/>
+        <element name="Activity" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Event" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

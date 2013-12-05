@@ -107,18 +107,20 @@
     }
 }
 
-- (void)addEvent:(NSDate*) startTime : (NSDate*) endTime :(Activity*) activity
+- (void)addEvent:(NSDate*)startTime :(NSDate*)endTime :(Activity*) activity
 {
-    Event * event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    Event *event = [NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
     event.startTime = startTime;
     event.endTime = endTime;
-    event.relationshipToActivity = activity;
     NSError *error;
     if (![self.managedObjectContext save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
     } else {
         NSLog(@"SUCCESS!!!! - Event Saved");
     }
+    [self saveData];
+    //event.relationshipToActivity = activity;
+    [self saveData];
 }
 
 -(NSArray*)getAllActivities
@@ -128,7 +130,13 @@
     [fetchRequest setEntity:entity];
     NSError* error;
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    return fetchedRecords;
+    NSMutableArray *fuckthisbullshit = [[NSMutableArray alloc] init];
+    for (Activity *e in fetchedRecords){
+        if (e.name != nil) {
+            [fuckthisbullshit addObject:e ];
+        }
+    }
+    return fuckthisbullshit;
 }
 
 -(NSArray*)getAllEvents
@@ -139,6 +147,7 @@
     NSError* error;
     NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     NSLog(@"%@", error);
+
     return fetchedRecords;
 }
 

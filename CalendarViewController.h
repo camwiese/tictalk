@@ -11,4 +11,6 @@
 @interface CalendarViewController : UITableViewController
 @property NSArray *events;
 @property NSMutableArray *days;
+
+-(void) redrawList;
 @end

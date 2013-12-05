@@ -39,7 +39,7 @@
 }
 - (IBAction)addBlock:(id)sender {
     DBManager *db = [[DBManager alloc] init];
-    [db addEvent:self.startDate.date :self.endDate.date];
+    [db addEvent:self.startDate.date :self.endDate.date :nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 @end

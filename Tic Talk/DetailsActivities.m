@@ -10,6 +10,9 @@
 #import "DBManager.h"
 #import "DetailsActivities.h"
 #import "EditDetails.h"
+#import "AddNewBlock.h"
+#import "DBManager.h"
+#import "CalendarViewController.h"
 
 @interface DetailsActivities ()
 
@@ -29,47 +32,9 @@
     return self;
 }
 
-- (void) convertBlockNSDateToHoursMinutes
-{
-    //endDate;
-    //startDate;
-    
-    
-    //NSCalendar *calendar = [NSCalendar currentCalendar];
-    //NSDateComponents *components = [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit) fromDate:date];
-    //NSInteger hour = [components hour];
-    //NSInteger minute = [components minute];
-    
-    
-    
-    
-    NSDate *startDate;
-    NSDate *endDate;
-    NSTimeInterval interval = [endDate timeIntervalSinceDate:startDate];
-    int hours = (int)interval / 3600;
-    int minutes = (interval - (hours*3600)) / 60;
-    NSString *timediff = [NSString stringWithFormat:@"%d:d", hours, minutes];
-    //this code should take the date of the time interval into account, I'm not sure what to do with my timediff varible name - Matt
-    
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    DBManager *db = [[DBManager alloc]init];
-    self.activities = [db getAllActivities];
-    
-    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
-    self.progressBar.transform = transform;
-	// Do any additional setup after loading the view.
-    float progress = 4 / [self.isSomethingEnabled.target floatValue];
-        [self.progressBar setProgress:progress animated:YES];
-        NSLog(@"%f", progress);
-        NSLog(@"%@", self.isSomethingEnabled.target);
-        self.progressText.text = [NSString stringWithFormat:@"4/%@", self.isSomethingEnabled.target];
-
-    
-    self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
     
 
 }
@@ -82,6 +47,31 @@
     self.activities = [db getAllActivities];
     Activity *activity = [self.activities objectAtIndex:[self.activityNumber intValue]];
     self.navigationItem.title = activity.name;
+    
+    db = [[DBManager alloc]init];
+    self.activities = [db getAllActivities];
+    
+    double time = 0;
+    NSArray *events = [db getAllEvents];
+    for(Event *e in events) {
+        NSLog(@"TIME:::    %f", (double) [e.endTime timeIntervalSinceDate:e.startTime]);
+        time += (double) [e.endTime timeIntervalSinceDate:e.startTime] / 3600;
+    }
+    
+    CGAffineTransform transform = CGAffineTransformMakeScale(1.0f, 16.0f);
+    self.progressBar.transform = transform;
+	// Do any additional setup after loading the view.
+    float progress = time / [self.isSomethingEnabled.target floatValue];
+    [self.progressBar setProgress:progress animated:YES];
+    NSLog(@"%f", progress);
+    NSLog(@"%@", self.isSomethingEnabled.target);
+    self.progressText.text = [NSString stringWithFormat:@"%.2f/%@", time,  self.isSomethingEnabled.target];
+    
+    CalendarViewController *tbc = (CalendarViewController *)self.childViewControllers[0];
+    NSLog(@"tbc");
+    //[tbc redrawList];
+    
+    self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"edit"]){
@@ -89,7 +79,11 @@
         controller.isSomethingEnabled = self.isSomethingEnabled;
         controller.activityNumber = self.activityNumber;
     }
-    
+    if([segue.identifier isEqualToString:@"suckadick"]){
+        AddNewBlock *controller = segue.destinationViewController;
+        controller.isSomethingEnabled = self.isSomethingEnabled;
+        //controller.activityNumber = self.activityNumber;
+    }
     NSLog (@"it worked");
     
 }

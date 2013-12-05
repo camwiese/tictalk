@@ -19,7 +19,7 @@
 
 -(void) addActivity:(NSString*)name : (NSNumber*)target :(NSNumber*)color;
 -(void)updateActivity:(NSString*)name :(NSNumber*)target :(NSNumber*)color :(NSNumber*)updatedActivityNumber;
--(void) addEvent:(NSDate*)startTime :(NSDate*)endTime : (Activity*) activity;
+-(void) addEvent:(NSDate*)startTime :(NSDate*)endTime :(Activity*) activity;
 -(NSArray*) getAllActivities;
 -(NSArray*) getAllEvents;
 -(void) removeActivity:(NSInteger) index;
