@@ -304,8 +304,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" id="5jq-GG-xI4"/>
                     <connections>
-                        <outlet property="endDate" destination="mj3-rI-H8L" id="POE-46-LCg"/>
-                        <outlet property="startDate" destination="0e6-h0-YzR" id="a1l-0p-LxN"/>
+                        <outlet property="endDate" destination="0e6-h0-YzR" id="ykY-xg-BY7"/>
+                        <outlet property="startDate" destination="0e6-h0-YzR" id="rOw-8b-MFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0s-BA-IK1" userLabel="First Responder" sceneMemberID="firstResponder"/>

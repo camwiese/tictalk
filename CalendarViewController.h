@@ -12,5 +12,5 @@
 @property NSArray *events;
 @property NSMutableArray *days;
 
--(void) redrawList;
+//-(void) redrawList;
 @end

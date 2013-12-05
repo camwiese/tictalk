@@ -67,10 +67,6 @@
     NSLog(@"%@", self.isSomethingEnabled.target);
     self.progressText.text = [NSString stringWithFormat:@"%.2f/%@", time,  self.isSomethingEnabled.target];
     
-    CalendarViewController *tbc = (CalendarViewController *)self.childViewControllers[0];
-    NSLog(@"tbc");
-    //[tbc redrawList];
-    
     self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

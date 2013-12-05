@@ -8,6 +8,7 @@
 
 #import "AddNewBlock.h"
 #import "DBManager.h"
+#import "Event.h"
 
 @interface AddNewBlock ()
 
@@ -39,7 +40,12 @@
 }
 - (IBAction)addBlock:(id)sender {
     DBManager *db = [[DBManager alloc] init];
-    [db addEvent:self.startDate.date :self.endDate.date :nil];
+    NSString *start = [formatter stringFromDate:startDate];
+    cell.textLabel.text = start;
+    NSLog(@"%@", start);
+    [db addEvent:self.startDate.date :self.endDate.date :self.isSomethingEnabled];
+    
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 @end

@@ -28,17 +28,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self redrawList];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    DBManager *db = [[DBManager alloc] init];
+    self.events = [db getAllEvents];
+    self.days = [[NSMutableArray alloc] init];
+    NSDate *start = ((Event*) [self.events firstObject]).startTime;
+    int count = 0;
+    NSMutableArray *temp = [[NSMutableArray alloc] init];
+    [self.days addObject:temp];
+    for(Event *e in self.events) {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        dateFormatter.dateFormat = @"MM/dd/yy";
+        NSString *dateString = [dateFormatter stringFromDate: start];
+        
+        if(![dateString isEqualToString:[dateFormatter stringFromDate:e.startTime]]) {
+            temp = [[NSMutableArray alloc] init];
+            [self.days addObject:temp];
+            count ++;
+        }
+        
+        [temp addObject:e];
+    }
+    [self refreshControl];
 }
--(void) viewWillAppear:(BOOL)animated {
-    NSLog(@"appear");
-    [self redrawList];
-}
+//-(void) viewWillAppear:(BOOL)animated {
+//    NSLog(@"appear");
+//   
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -74,9 +89,9 @@
     NSArray *day = [self.days objectAtIndex:indexPath.section];
     Event *event = [day objectAtIndex:indexPath.row];
     NSDate *startDate = event.startTime;
-    if (startDate == nil) {
-        startDate = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
-    }
+//    startDate = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+//    if (startDate == nil) {
+//    }
     NSString *start = [formatter stringFromDate:startDate];
     cell.textLabel.text = start;
     NSLog(@"%@", start);
@@ -134,28 +149,28 @@
 
  */
 
--(void) redrawList {
-    DBManager *db = [[DBManager alloc] init];
-    self.events = [db getAllEvents];
-    self.days = [[NSMutableArray alloc] init];
-    NSDate *start = ((Event*) [self.events firstObject]).startTime;
-    int count = 0;
-    NSMutableArray *temp = [[NSMutableArray alloc] init];
-    [self.days addObject:temp];
-    for(Event *e in self.events) {
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-        dateFormatter.dateFormat = @"MM/dd/yy";
-        NSString *dateString = [dateFormatter stringFromDate: start];
-        
-        if(![dateString isEqualToString:[dateFormatter stringFromDate:e.startTime]]) {
-            temp = [[NSMutableArray alloc] init];
-            [self.days addObject:temp];
-            count ++;
-        }
-        
-        [temp addObject:e];
-    }
-
-}
+//-(void) redrawList {
+//    DBManager *db = [[DBManager alloc] init];
+//    self.events = [db getAllEvents];
+//    self.days = [[NSMutableArray alloc] init];
+//    NSDate *start = ((Event*) [self.events firstObject]).startTime;
+//    int count = 0;
+//    NSMutableArray *temp = [[NSMutableArray alloc] init];
+//    [self.days addObject:temp];
+//    for(Event *e in self.events) {
+//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+//        dateFormatter.dateFormat = @"MM/dd/yy";
+//        NSString *dateString = [dateFormatter stringFromDate: start];
+//        
+//        if(![dateString isEqualToString:[dateFormatter stringFromDate:e.startTime]]) {
+//            temp = [[NSMutableArray alloc] init];
+//            [self.days addObject:temp];
+//            count ++;
+//        }
+//        
+//        [temp addObject:e];
+//    }
+//
+//}
 
 @end

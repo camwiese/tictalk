@@ -39,6 +39,7 @@
 }
 - (IBAction)addBlock:(id)sender {
     DBManager *db = [[DBManager alloc] init];
+    NSLog(@"%@", _startDate);
     [db addEvent:self.startDate.date :self.endDate.date :self.isSomethingEnabled];
     [self.navigationController popViewControllerAnimated:YES];
 }

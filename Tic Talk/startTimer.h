@@ -14,7 +14,7 @@
 @property int hours;
 @property int minutes;
 @property int seconds;
-@property NSDate *startDate;
+
 @property NSDate *endDate;
 @property NSDate *diffDate;
 @property NSTimer *timerz;

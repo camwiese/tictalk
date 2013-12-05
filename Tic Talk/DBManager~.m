@@ -118,8 +118,8 @@
     } else {
         NSLog(@"SUCCESS!!!! - Event Saved");
     }
-    [self saveData];
-    event.relationshipToActivity = activity;
+    //[self saveData];
+    //event.relationshipToActivity = activity;
     [self saveData];
 }
 

@@ -21,13 +21,13 @@
     _timerRunning = FALSE;
     
 }
-- (IBAction)start:(UIButton*)sender {
-    if (self.startDate == nil){
-        self.startDate = [[NSDate alloc] init];
-    }
-    [self timer];
-    _timerRunning = TRUE;
-}
+//- (IBAction)start:(UIButton*)sender {
+//    if (self.startDate == nil){
+//        self.startDate = [[NSDate alloc] init];
+//    }
+//    [self timer];
+//    _timerRunning = TRUE;
+//}
 
 
 
@@ -39,10 +39,10 @@
                                         repeats:YES];
 }
 
-
+/*
 - (void) targetMethod: (NSTimer*)sender{
     self.endDate = [[NSDate alloc] init];
-    NSTimeInterval interval = [self.endDate timeIntervalSinceDate:(self.startDate)];
+//    NSTimeInterval interval = [self.endDate timeIntervalSinceDate:(self.startDate)];
     if (interval > 0){
         NSInteger time = (NSInteger) interval;
         _hours = time / 3060;
@@ -81,6 +81,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+}*/
 
 @end
