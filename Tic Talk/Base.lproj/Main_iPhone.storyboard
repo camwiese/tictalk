@@ -500,7 +500,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="buttonstop.png" width="251" height="87"/>
         <image name="runner1.png" width="35" height="35"/>
         <image name="tree_sunset.png" width="1600" height="1200"/>
-        <image name="tree_sunset.png" width="1600" height="1200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -10,6 +10,8 @@
 #import "Activity.h"
 
 @interface EditDetails : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) IBOutlet UIProgressView * threadProgressView;
 @property (nonatomic)Activity *isSomethingEnabled;
 @property (nonatomic)NSNumber *activityNumber;

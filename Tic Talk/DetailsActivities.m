@@ -35,7 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    DBManager *db = [[DBManager alloc]init];
+    self.activities = [db getAllActivities];
     
+    self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
 
 }
 
@@ -67,7 +70,9 @@
     NSLog(@"%@", self.isSomethingEnabled.target);
     self.progressText.text = [NSString stringWithFormat:@"%.2f/%@", time,  self.isSomethingEnabled.target];
     
-    self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
+     self.navigationItem.title =[self.isSomethingEnabled valueForKey:@"name"];
+    
+    
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"edit"]){
@@ -78,7 +83,7 @@
     if([segue.identifier isEqualToString:@"suckadick"]){
         AddNewBlock *controller = segue.destinationViewController;
         controller.isSomethingEnabled = self.isSomethingEnabled;
-        //controller.activityNumber = self.activityNumber;
+        controller.activityNumber = self.activityNumber;
     }
     NSLog (@"it worked");
     

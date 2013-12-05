@@ -304,7 +304,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" id="5jq-GG-xI4"/>
                     <connections>
-                        <outlet property="endDate" destination="0e6-h0-YzR" id="ykY-xg-BY7"/>
+                        <outlet property="endDate" destination="mj3-rI-H8L" id="7FM-rW-Rha"/>
                         <outlet property="startDate" destination="0e6-h0-YzR" id="rOw-8b-MFi"/>
                     </connections>
                 </viewController>

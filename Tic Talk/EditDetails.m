@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     //self.activityName.delegate = self;
     
 	// Do any additional setup after loading the view.

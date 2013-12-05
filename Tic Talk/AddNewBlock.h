@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIDatePicker *startDate;
 @property (strong, nonatomic) IBOutlet UIDatePicker *endDate;
 @property Activity *isSomethingEnabled;
+@property (nonatomic)NSNumber *activityNumber;
 
 
 @end
