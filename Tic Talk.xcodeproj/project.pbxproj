@@ -38,6 +38,7 @@
 		3CD2C8721823264F0008DF3A /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C8711823264F0008DF3A /* DBManager.m */; };
 		82B47A561833058300C70DC0 /* startTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A551833058300C70DC0 /* startTimer.m */; };
 		82B47A59183306A700C70DC0 /* AddNewBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B47A58183306A700C70DC0 /* AddNewBlock.m */; };
+		82DED0D918503C6500105818 /* tree_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DED0D818503C6500105818 /* tree_sunset.png */; };
 		CB4EB039184EB8C300C7276E /* AddNewActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4EB038184EB8C300C7276E /* AddNewActivity.m */; };
 		FBEFDF86183EE70700F6C579 /* buttonstop.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF84183EE70700F6C579 /* buttonstop.png */; };
 		FBEFDF87183EE70700F6C579 /* buttonstart.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEFDF85183EE70700F6C579 /* buttonstart.png */; };
@@ -101,6 +102,7 @@
 		82B47A551833058300C70DC0 /* startTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startTimer.m; sourceTree = "<group>"; };
 		82B47A57183306A700C70DC0 /* AddNewBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewBlock.h; sourceTree = "<group>"; };
 		82B47A58183306A700C70DC0 /* AddNewBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewBlock.m; sourceTree = "<group>"; };
+		82DED0D818503C6500105818 /* tree_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_sunset.png; sourceTree = "<group>"; };
 		CB4EB037184EB8C300C7276E /* AddNewActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewActivity.h; sourceTree = "<group>"; };
 		CB4EB038184EB8C300C7276E /* AddNewActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewActivity.m; sourceTree = "<group>"; };
 		FBEFDF84183EE70700F6C579 /* buttonstop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonstop.png; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		3C68617E1819E297002A5DE7 /* Tic Talk */ = {
 			isa = PBXGroup;
 			children = (
+				82DED0D818503C6500105818 /* tree_sunset.png */,
 				3C8E3ED318500AF4006C8F36 /* Activity.h */,
 				3C8E3ED418500AF4006C8F36 /* Activity.m */,
 				3C8E3ED018500AF3006C8F36 /* Event.h */,
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DED0D918503C6500105818 /* tree_sunset.png in Resources */,
 				3C68618F1819E298002A5DE7 /* Main_iPad.storyboard in Resources */,
 				3C6861941819E298002A5DE7 /* Images.xcassets in Resources */,
 				3C68618C1819E298002A5DE7 /* Main_iPhone.storyboard in Resources */,
